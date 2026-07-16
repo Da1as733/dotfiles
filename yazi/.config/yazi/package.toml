@@ -1,0 +1,12 @@
+[[plugin.deps]]
+use = "NoponyAsked/sxiv"
+rev = "525a842"
+hash = "ca5c2ad5cccb94f93f3bf8eb2e9a1421"
+
+[[plugin.deps]]
+use = "boydaihungst/mediainfo"
+rev = "a6d30a1"
+hash = "7d4dd1afcb7ecbd3609c29a82d6dbc5c"
+
+[flavor]
+deps = []

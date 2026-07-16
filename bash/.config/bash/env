@@ -1,0 +1,19 @@
+export EDITOR="mircro"
+export VISUAL="micro"
+export TERMINAL="kitty"
+export LANG="en_US.UTF-8"
+
+export HISTFILESIZE=10000 
+export HISTSIZE=500
+export HISTTIMEFORMAT="%F %T"
+export HISTCONTROL=erasedups:ignoredups:ignorespace
+
+shopt -s checkwinsize
+shopt -s histappend
+PROMT_COMMAND='history -a'
+
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_STATE_HOME="$HOME/.local/state"
+export XDG_CACHE_HOME="$HOME/.cache"
+export PATH="$HOME/.local/bin:$PATH"

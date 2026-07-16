@@ -1,0 +1,4 @@
+[[manager.prepend_keymap]]
+on = ["p"]
+run = "plugin sxiv"
+desc = "Preview images in sxiv"

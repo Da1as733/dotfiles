@@ -1,0 +1,1 @@
+[ -f ~/.config/bash/bashrc ] && source ~/.config/bash/bashrc

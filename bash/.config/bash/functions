@@ -1,0 +1,25 @@
+stow-force() {
+    local stow_dir="${HOME}/Documents/dotfiles"
+    local target_dir="${HOME}"
+
+    # Перебираем все переданные пакеты
+    for package in "$@"; do
+        local package_path="${stow_dir}/${package}"
+        [ -d "$package_path" ] || continue
+
+        # Находим все каталоги внутри пакета (кроме корня пакета)
+        find "$package_path" -type d -mindepth 1 -print0 | while IFS= read -r -d '' dir; do
+            local rel_path="${dir#$package_path/}"
+            local target_path="${target_dir}/${rel_path}"
+
+            # Если целевой путь — каталог и не симлинк, удаляем его
+            if [ -d "$target_path" ] && [ ! -L "$target_path" ]; then
+                echo "Удаляем конфликтующий каталог: $target_path"
+                rm -rf "$target_path"
+            fi
+        done
+    done
+
+    # Запускаем stow с перезаписью файлов
+    stow -d "$stow_dir" -t "$target_dir" -R -v --override='.*' "$@"
+}

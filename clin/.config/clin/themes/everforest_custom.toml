@@ -1,0 +1,22 @@
+# ~/.config/clin/themes/everforest.toml
+
+accent = "#A7C080"
+heading = "#D699B6"
+success = "#3A94C5"
+destructive = "#DF69BA"
+muted = "#303030"
+text = "#D3C6AA"
+fg = "#D3C6AA"
+border = "#D3C6AA"
+tag = "#DBBC7F"
+folder = "#7FBBB3"
+highlight_fg = "#D3C6AA"
+highlight_bg = "#1E2326"
+
+nodes = ["#7aa2f7","#bb9af7","#7dcfff","#e0af68","#9ece6a","#f7768e","#94e2d5","#ff9e64"]
+chrome = "#565f89"
+title  = "#bb9af7"
+text   = "#cbccd5"
+fg     = "#ffffff"
+grid   = "#383c5f"
+bg     = "#1a1b26"
