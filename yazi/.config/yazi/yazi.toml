@@ -4,7 +4,7 @@
 #:schema https://yazi-rs.github.io/schemas/yazi.json
 
 [mgr]
-ratio          = [ 1, 2, 5 ]
+ratio          = [ 0, 1, 7 ]
 sort_by        = "alphabetical"
 sort_sensitive = false
 sort_reverse   = false
@@ -16,20 +16,19 @@ show_hidden    = true
 show_symlink   = true
 scrolloff      = 5
 mouse_events   = [ "click", "scroll", "drag" ]
+[[plugin.prepend_previewers]]
+mime = "image/{jpeg,png,webp}"
+run  = "zoom 2"
 
 [preview]
 wrap            = "yes"
 tab_size        = 2
-max_width       = 900
-max_height      = 1200
+max_width       = 2000
+max_height      = 2000
 cache_dir       = ""
-image_delay     = 5
-image_filter    = "triangle"
+image_delay     = 0
+image_filter    = "nearest"
 image_quality   = 90
-sixel_fraction  = 1      # Качество при использовании Sixel (1 — макс.)
-YAZI_SIXEL_IMAGE= "img2sixel"
-ueberzug_scale  = 1
-ueberzug_offset = [ 0, 0, 0, 0 ]
 
 [opener]
 edit = [

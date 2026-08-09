@@ -1,12 +1,17 @@
 [[plugin.deps]]
-use = "NoponyAsked/sxiv"
-rev = "525a842"
-hash = "ca5c2ad5cccb94f93f3bf8eb2e9a1421"
-
-[[plugin.deps]]
 use = "boydaihungst/mediainfo"
 rev = "a6d30a1"
 hash = "7d4dd1afcb7ecbd3609c29a82d6dbc5c"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:mount"
+rev = "bbac5e7"
+hash = "e3260d0b1feded8c8e3ae3afa1169e30"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:zoom"
+rev = "bbac5e7"
+hash = "e8e279463ee99c940e6945a14cf4aa9e"
 
 [flavor]
 deps = []

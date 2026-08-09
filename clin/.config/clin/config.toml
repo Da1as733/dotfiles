@@ -24,16 +24,18 @@ preview_expand_mode = "inline"
 preview_wrap = true
 syntax_highlighting = true
 auto_refresh = true
-code_line_numbers = true
-code_theme = "base16-ocean.dark"
+# code_line_numbers = true
+# code_theme = "base16-ocean.dark"
 link_url_max_length = 80
 preview_wrap_indicator = true
+code_line_numbers = true
+code_theme = "base16-ocean.dark"
 
 # ── Display ──
 
 [ui]
 # Theme to use ("default", "tokyo_night", "catppuccin_mocha", "onedark", "gruvbox", etc.)
-theme = "everforest"
+theme = "default"
 
 # Background style ("transparent" or "solid")
 background = "solid"
@@ -51,7 +53,7 @@ accent = "#A7C080"
 heading = "#E67E80"
 success = "#D699B6"
 destructive = "#2E383C"
-muted = "#9DA9A0"
+muted = "#5E5959"
 text = "#D3C6AA"
 border = "#2E383C"
 tag = "#D3C6AA"
@@ -86,36 +88,37 @@ density = "compact"
 default_view = "tree"
 
 # Default sorting field for the notes list ("title" or "modified").
-# default_sort_field = "title"
+default_sort_field = "title"
 
 # Default sorting order ("ascending" or "descending").
 # default_sort_order = "ascending"
 
 # Keep pinned notes at the top of the list.
-pinned_on_top = false
+pinned_on_top = true
 
 # Show hidden files and folders (starting with ".") in the notes list.
 show_hidden_files = false
 calendar_enabled = true
-calendar_height = 12
+calendar_height = 10
 calendar_position = "bottom"
 folders_first = true
-preview_width_ratio = 0.5483871
-sections = ["calendar", "goals"]
+preview_width_ratio = 0.76842105
+sections = ["goals", "calendar"]
 show_all_files = false
 week_start = "monday"
-expanded_folders = [""]
+expanded_folders = ["Projects", "__clin_virtual__/pinned", "Resources", ""]
 pinned_folders = []
 smart_folders_enabled = false
+default_sort_order = "ascending"
 
 # ── Editor ────────────────────────────────────────────────────────────────────
 
 [editor]
 # External editor command (e.g., "nvim", "code", "nano").
-external_command = "nano"
+external_command = "micro"
 
 # Enable external editor mode by default.
-external_enabled = false
+external_enabled = true
 
 # Show the markdown preview in the editor view by default.
 preview_enabled = true
@@ -152,25 +155,25 @@ preview_enabled = true
 
 [graf.visual]
 # Graph background style ("solid", "transparent")
-graph_background = "transparent"
+graph_background = "solid"
 
 # Node color mode ("folder", "tag", "uniform", "link_count")
 node_color_mode = "folder"
 
 # Edge color mode ("uniform", "source", "target")
-edge_color_mode = "uniform"
+edge_color_mode = "source"
 
 # Label display mode ("selected", "neighbors", "all", "none")
-label_mode = "selected"
+label_mode = "all"
 
 # Maximum length of node labels.
-label_max_length = 20
+label_max_length = 30
 
 # Base size for nodes.
-node_size = 2.0
+node_size = 4.0
 
 # Node size mode ("fixed", "link_count").
-node_size_mode = "fixed"
+node_size_mode = "link_count"
 
 # Thickness of edges (1-3).
 edge_thickness = 1
@@ -182,7 +185,7 @@ show_legend = true
 show_grid = false
 
 # Show minimap in graph view.
-show_minimap = false
+show_minimap = true
 
 # Minimap position ("top_right", "top_left", "bottom_right", "bottom_left").
 minimap_position = "top_right"
@@ -218,11 +221,11 @@ grid_divisions = 10
 
 [graf.physics]
 # Ideal distance between nodes.
-ideal_distance = 80.0
+ideal_distance = 100.0
 
 [graf.interaction]
 # Zoom sensitivity factor.
-zoom_factor = 1.15
+zoom_factor = 1.1
 
 # Drag sensitivity factor.
 drag_sensitivity = 1.0
@@ -244,4 +247,4 @@ max_visible = 10
 [goals]
 enabled = true
 note_goal = 0
-word_goal = 500
+word_goal = 100

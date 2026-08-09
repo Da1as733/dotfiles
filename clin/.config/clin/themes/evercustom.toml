@@ -1,0 +1,25 @@
+# ~/.config/clin/themes/my_theme.toml
+[chrome]
+accent = "#7aa2f7"
+heading = "#e0af68"
+success = "#9ece6a"
+warning = "#e0af68"
+destructive = "#f7768e"
+muted = "#565f89"
+text = "#c0caf5"
+fg = "#ffffff"
+border = "#414868"
+tag = "#bb9af7"
+folder = "#7dcfff"
+highlight_fg = "#1a1b26"
+highlight_bg = "#7aa2f7"
+background = "#1a1b26"   # optional → transparent when absent
+
+[graph]
+nodes = ["#7aa2f7","#bb9af7","#7dcfff","#e0af68","#9ece6a","#f7768e","#94e2d5","#ff9e64"]
+chrome = "#565f89"
+title  = "#bb9af7"
+text   = "#cbccd5"
+fg     = "#ffffff"
+grid   = "#383c5f"
+bg     = "#1a1b26"

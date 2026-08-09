@@ -1,9 +1,20 @@
+#
+# aliaces
+#
+# navigation
 alias ls='ls -l --color=auto'
 alias la='ls -al --color=auto'      
 alias lt='ls -ltrh --color=auto' 
 alias grep='grep --color=auto'
-alias stow='stow --override='.*' -d ~/dotfiles -R -v'
-alias count='ls * | wc -l'
+alias dot='cd ~/dotfiles'
+alias pro='cd ~/projects'
+# programs
 alias n='nano'
 alias c='clear'
 alias y='yazi'
+
+alias stow='stow --override='.*' -d ~/dotfiles -R -v'
+alias count='ls * | wc -l'
+
+alias cargo-autoinstall='cargo install --path .'
+export CARGO_INSTALL_ROOT="$HOME/.local/bin"

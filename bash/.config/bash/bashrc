@@ -1,6 +1,44 @@
 #
-# ~/.bashrc
+# __/\\\\\\\\\\\\\_______/\\\\\\\\\________/\\\\\\\\\\\____/\\\________/\\\_        
+# _\/\\\/////////\\\___/\\\\\\\\\\\\\____/\\\/////////\\\_\/\\\_______\/\\\_       
+#  _\/\\\_______\/\\\__/\\\/////////\\\__\//\\\______\///__\/\\\_______\/\\\_      
+#   _\/\\\\\\\\\\\\\\__\/\\\_______\/\\\___\////\\\_________\/\\\\\\\\\\\\\\\_     
+#    _\/\\\/////////\\\_\/\\\\\\\\\\\\\\\______\////\\\______\/\\\/////////\\\_    
+#     _\/\\\_______\/\\\_\/\\\/////////\\\_________\////\\\___\/\\\_______\/\\\_   
+#      _\/\\\_______\/\\\_\/\\\_______\/\\\__/\\\______\//\\\__\/\\\_______\/\\\_  
+#       _\/\\\\\\\\\\\\\/__\/\\\_______\/\\\_\///\\\\\\\\\\\/___\/\\\_______\/\\\_ 
+#        _\/////////////____\///________\///____\///////////_____\///________\///__
 #
+
+#
+# source bashrc
+#[ -f ~/.config/bash/bashrc ] && source ~/.config/bash/bashrc
+#
+
+#
+# Envierment
+#
+export EDITOR="mircro"
+export VISUAL="micro"
+export TERMINAL="kitty"
+export LANG="en_US.UTF-8"
+
+export HISTFILESIZE=10000 
+export HISTSIZE=500
+export HISTTIMEFORMAT="%F %T"
+export HISTCONTROL=erasedups:ignoredups:ignorespace
+
+shopt -s checkwinsize
+shopt -s histappend
+PROMT_COMMAND='history -a'
+
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_STATE_HOME="$HOME/.local/state"
+export XDG_CACHE_HOME="$HOME/.cache"
+export PATH="$HOME/.local/bin:$PATH"
+
+export PREFIX="$HOME/.local"
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -9,20 +47,21 @@ if [ -f /etc/bashrc ]; then
     . /etc/bashrc   # --> Read /etc/bashrc, if present.
 fi
 
-case "$TERM" in
-    xterm-color|*-256color|xterm-kitty) color_prompt=yes;;
-esac
-
-[ -f ~/.config/bash/env ] && source ~/.config/bash/env
-
-[ -f ~/.config/bash/functions ] && source ~/.config/bash/functions
-
+#
+# load aliases
+#
 [ -f ~/.config/bash/aliases ] && source ~/.config/bash/aliases
 
+#
+# Export my theme
+#
 export THEME=$HOME/.config/bash/mytheme
         if [[ -f $THEME ]]; then
         export DEFAULT_USER=`whoami`
         source $THEME
 fi
 
+#
+# Blesh for autosuggestions and syntaxis highliting
+#
 [ -f ~/.local/share/blesh/ble.sh ] && source ~/.local/share/blesh/ble.sh

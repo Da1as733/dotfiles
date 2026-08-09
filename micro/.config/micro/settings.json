@@ -1,0 +1,10 @@
+{
+	"clipboard": "terminal",
+	"colorscheme": "simple",
+	"ruler": true,
+	"cursorline": true,
+	"softwrap": true,
+	"wordwrap": true,
+	"incsearch": true,
+	"hlsearch": true
+}
