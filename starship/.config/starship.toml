@@ -1,0 +1,21 @@
+format = '''\[$username\](bold)${custom.privilege} in $directory ->'''
+
+[username]
+format = "[$user]($style)"
+style_user = "purple bold"
+style_root = "red bold"
+show_always = true
+
+[custom.privilege]
+command = "[[ $EUID -eq 0 ]] && echo '#' || echo '$'"
+when = true
+shell = ["bash", "--noprofile", "--norc"]
+format = "[$output](bold yellow)"
+
+[directory]
+format = "[$path]($style)"
+style = "cyan bold"
+truncation_length = 3
+
+[cmd_duration]
+disabled = true

@@ -1,0 +1,154 @@
+[backup]
+auto_push = false
+backup_on_quit = false
+backup_on_save = false
+enabled = false
+
+[core]
+auto_refresh = true
+code_line_numbers = true
+code_theme = "base16-ocean.dark"
+confirm_on_delete = true
+confirm_on_quit = false
+enable_key_sequences = false
+keybind_preset = "default"
+link_url_max_length = 80
+mouse_enabled = true
+preview_expand_mode = "inline"
+preview_wrap = true
+preview_wrap_indicator = true
+storage_path = "/home/user1/Documents/database"
+syntax_highlighting = true
+vaults = []
+
+[core.vault_names]
+
+[editor]
+external_command = "micro"
+external_enabled = false
+preview_enabled = true
+show_line_numbers = true
+date_format = "%Y-%m-%d %H:%M"
+edit_mode_highlight = true
+extended_markdown_features = true
+ghost_syntax = true
+soft_wrap = true
+zen_hide_line_numbers = true
+zen_hide_scrollbar = true
+zen_focus_dimming = false
+zen_focus_unit = "paragraph"
+zen_focus_context = 3
+copy_on_select = true
+text_align = "left"
+zen_padding_percent = 15
+
+[goals]
+enabled = true
+note_goal = 0
+word_goal = 100
+
+[graf]
+preview_enabled = true
+max_node = 500
+
+[notes]
+rename_on_title_change = true
+
+[graf.filter]
+exclude_tags = []
+show_orphan = false
+
+[graf.interaction]
+drag_sensitivity = 1.0
+zoom_factor = 1.1
+
+[graf.physics]
+ideal_distance = 100.0
+tick_rate = "auto"
+
+[graf.search]
+max_results = 20
+max_visible = 10
+
+[graf.visual]
+canvas_marker = "braille"
+edge_color_mode = "source"
+edge_thickness = 1
+graph_background = "solid"
+label_max_length = 30
+label_mode = "all"
+label_offset = 4.0
+minimap_height = 12
+minimap_position = "top_right"
+minimap_width = 24
+node_color_mode = "folder"
+node_shape = "circle"
+node_size = 4.0
+node_size_mode = "link_count"
+show_legend = true
+show_minimap = true
+looking_glass_height = 12
+looking_glass_width = 24
+show_looking_glass = true
+node_scale = 5
+node_fill = "dynamic"
+selection_focus = "grow"
+
+[graf.visual.colors]
+
+[list]
+calendar_enabled = true
+calendar_height = 10
+calendar_position = "bottom"
+date_format = "%d.%m.%Y"
+default_sort_field = "modified"
+default_sort_order = "descending"
+default_view = "tree"
+density = "compact"
+folders_first = true
+pinned_folders = []
+pinned_on_top = true
+preview_enabled = true
+preview_encryption = false
+preview_position = "right"
+preview_width_ratio = 0.7684210538864136
+sections = [
+    "goals",
+    "calendar",
+]
+show_all_files = false
+show_file_size = false
+show_hidden_files = false
+smart_folders_enabled = false
+week_start = "monday"
+folder_graph_preview = false
+inline_info = true
+skip_dirs = []
+
+[ui]
+accent = "#A7C080"
+background = "transparent"
+background_color = "#1E2326"
+border = "#2E383C"
+destructive = "#2E383C"
+folder = "#7FBBB3"
+heading = "#E67E80"
+hint_bar_style = "classic"
+icon_mode = "nerd"
+muted = "#5E5959"
+show_status_bar = true
+success = "#D699B6"
+tab_icons_only = false
+tag = "#D3C6AA"
+text = "#D3C6AA"
+theme = "default"
+scrollbar_pan_mode = false
+scrollbars = true
+
+[image]
+attachments_subdir = "attachments"
+cache_size = 32
+enabled = true
+preview_rows = 8
+
+[statusline]

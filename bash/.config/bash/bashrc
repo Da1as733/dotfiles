@@ -55,13 +55,14 @@ fi
 #
 # Export my theme
 #
-export THEME=$HOME/.config/bash/mytheme
-        if [[ -f $THEME ]]; then
-        export DEFAULT_USER=`whoami`
-        source $THEME
-fi
+# export THEME=$HOME/.config/bash/mytheme
+#        if [[ -f $THEME ]]; then
+#        export DEFAULT_USER=`whoami`
+#        source $THEME
+# fi
 
-#
-# Blesh for autosuggestions and syntaxis highliting
-#
-[ -f ~/.local/share/blesh/ble.sh ] && source ~/.local/share/blesh/ble.sh
+eval "$(starship init bash)"
+
+# [ "$PS1" = "\\s-\\v\\\$ " ] && PS1="[\u@\h \W]\\$ "
+
+enable -f /usr/lib/libflyline.so flyline
